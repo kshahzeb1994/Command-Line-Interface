@@ -1,0 +1,24 @@
+{
+  "name": "commandlineinterface",
+  "version": "1.0.0",
+  "description": "Account Management Command Line Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kshahzeb1994/Command-Line-Interface.git"
+  },
+  "author": "Muhammad Shahzeb Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kshahzeb1994/Command-Line-Interface/issues"
+  },
+  "homepage": "https://github.com/kshahzeb1994/Command-Line-Interface#readme",
+  "dependencies": {
+    "commander": "^2.13.0",
+    "inquirer": "^5.0.0",
+    "mongoose": "^4.13.9"
+  }
+}

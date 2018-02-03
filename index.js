@@ -50,7 +50,7 @@ const listCustomers = () => {
     Customer.find()
         .then(customer => {
             console.info(customers);
-            console.info(`${customer.length} matches`);
+            console.info(`${customer.length} customer`);
             db.close;
         });
 }

@@ -61,4 +61,10 @@ program
         prompt(question).then(answers => updateCustomer(_id, answers));
     });
 
+program
+    .command('remove <_id>')
+    .alias('r')
+    .description('Remove a customer')
+    .action(_id => removeCustomer(_id));    
+
 program.parse(process.argv);

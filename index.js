@@ -31,19 +31,19 @@ const findCustomer = (name) => {
 }
 
 const updateCustomer = (_id, customer) => {
-    Customer.update({ _id}, customer)
+    Customer.update({ _id }, customer)
         .then(customer => {
             console.info('Customer Updated');
             db.close();
-        })
+        });
 }
 
-const removeCustomer = (_id, customer) => {
-    Customer.remove({ _id})
+const removeCustomer = (_id) => {
+    Customer.remove({ _id })
         .then(customer => {
             console.info('Customer removed');
             db.close();
-        })
+        });
 }
 
 const listCustomers = () => {

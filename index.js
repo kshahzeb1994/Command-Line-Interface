@@ -49,7 +49,7 @@ const removeCustomer = (_id) => {
 const listCustomers = () => {
     Customer.find()
         .then(customer => {
-            console.info(customers);
+            console.info(customer);
             console.info(`${customer.length} customer`);
             db.close;
         });

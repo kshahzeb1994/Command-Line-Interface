@@ -67,4 +67,10 @@ program
     .description('Remove a customer')
     .action(_id => removeCustomer(_id));
 
+program
+    .command('list')
+    .alias('l')
+    .description('List all customers')
+    .action(() => listCustomers());
+
 program.parse(process.argv);

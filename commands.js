@@ -2,7 +2,10 @@ const program = require('commander');
 const { prompt } = require ('inquirer');
 const {
     addCustomer,
-    findCustomer
+    findCustomer,
+    updateCustomer,
+    removeCustomer,
+    listCustomers
 } = require('./index');
 
 const question = [
@@ -49,5 +52,13 @@ program
     .alias('f')
     .description('Find a customer')
     .action(name => findCustomer(name));
+
+program
+    .command('update <_id>')
+    .alias('u')
+    .description('Update  a customer')
+    .action((_id) => {
+        prompt(question).then(answers => updateCustomer(_id, answers));
+    });
 
 program.parse(process.argv);
